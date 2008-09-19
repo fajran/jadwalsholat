@@ -198,5 +198,5 @@ if len(sys.argv) == 2:
 
 gnomeapplet.bonobo_factory("OAFIID:GNOME_JadwalSholat_Factory",
                                      gnomeapplet.Applet.__gtype__,
-                                     "simple remote control", "1.0", factory)
+                                     "Penunjuk waktu sholat", "1.0", factory)
 
