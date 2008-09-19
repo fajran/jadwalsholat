@@ -1,0 +1,25 @@
+ <oaf_info>
+    <oaf_server iid="OAFIID:GNOME_JadwalSholat_Factory"
+            type="exe" location="/home/iang/project/jadwalsholat/dev/master/jadwalsholat/main.py">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+            <item value="IDL:Bonobo/GenericFactory:1.0"/>
+            <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="Jadwal Sholat"/>
+        <oaf_attribute name="description" type="string" value="Penunjuk waktu sholat"/>
+    </oaf_server>
+
+    <oaf_server iid="OAFIID:GNOME_JadwalSholat"
+            type="factory" location="OAFIID:GNOME_JadwalSholat_Factory">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+            <item value="IDL:GNOME/Vertigo/PanelAppletShell:1.0"/>
+            <item value="IDL:Bonobo/Control:1.0"/>
+            <item value="IDL:Bonobo/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="Jadwal Sholat"/>
+        <oaf_attribute name="description" type="string" value="Penunjuk waktu sholat"/>
+        <oaf_attribute name="panel:category" type="string" value="Utility"/>
+    </oaf_server>
+</oaf_info>
